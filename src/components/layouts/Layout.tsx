@@ -1,15 +1,24 @@
 import { Link, Outlet } from "react-router";
 import style from './layout.module.css'
+import { useState } from "react";
 
 export default function Layout() {
+
+  const [menuVisible, setMenuVisible] = useState(window.innerWidth>767 ? true : false);
+
+  const handleClick = ()=>{
+    const value = menuVisible?false:true
+    setMenuVisible(value)
+  } 
+
   return (
     <>
       <div className={style.space} ></div>
       <header className={style.header}>
           <a href="./" className={`${style.logo} ${style.color_transition}`}>repoxi</a>
           <nav >
-              {/* <img className="w-full" src="/img/menu.png" alt="menu"/> */}
-              <div className={style.menu}>
+              <img onClick={handleClick} className={`${style.menu_img}`} src="/img/menu.png" alt="menu"/>
+              <div className={menuVisible?`${style.active} ${style.menu}`:`${style.deactive} ${style.menu}`}>
                   <Link className={`${style.menu_a} ${style.color_transition}`} to="./">Inicio</Link>
                   {/* <Link className="menu-publicidad" to="/publicity">Publicidad</Link> */}
                   <Link className={`${style.menu_a} ${style.color_transition}`} to="/neon">Descubre Nuestros Neones</Link>

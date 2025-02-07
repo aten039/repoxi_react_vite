@@ -38,12 +38,40 @@
     text-align: center;
 }
 
-
-.content{
-    width: 90%;
+.menu_img{
+    width: 3rem;
+    height: 3rem;
+    display: none;
 }
 
 
+@media(max-width:991px){
+    .menu{
+        padding: 1.5rem;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        left: 0;
+        z-index: 100;
+        background-color:  black;
+        text-align: right;
+        display: none;
+        flex-direction: column;
+        transition: all ease .5s;
+    }
+    .menu_img{
+        display: block;
+    }
+}
+.active{
+    display: flex;
+}
+.deactive{
+    display: none;
+}
+.content{
+    width: 90%;
+}
 .footer{
     position: absolute;
     bottom: 0;
@@ -78,8 +106,6 @@
         text-align: left;
     }
 }
-
-
 .dragon{
     text-align: center;
     margin-top: 1rem;
