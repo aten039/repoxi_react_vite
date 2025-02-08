@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function Layout() {
 
-  const [menuVisible, setMenuVisible] = useState(window.innerWidth>767 ? true : false);
+  const [menuVisible, setMenuVisible] = useState(window.innerWidth>991 ? true : false);
 
   const handleClick = ()=>{
     const value = menuVisible?false:true
@@ -28,7 +28,7 @@ export default function Layout() {
           </nav>
       </header>
 
-      <main className={style.content}>
+      <main >
         <Outlet/>
       </main>
 

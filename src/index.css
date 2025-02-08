@@ -43,6 +43,8 @@ fuente poppins
   --text-xl: 1.25rem;
   --text-2xl: 1.5rem;
   --text-4xl: 2.25rem;
+  --text-6xl: 3.75rem;
+  --text-8xl: 6rem;
   --screen-phone:767px;
   --screen-tablet:991px;
   --screen-desktop:1199px;

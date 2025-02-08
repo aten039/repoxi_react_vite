@@ -1,5 +1,5 @@
 .space{
-    padding-top: 6rem;
+    padding-top: 5rem;
 }
 .header{
     display: flex;
@@ -8,10 +8,11 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 6rem;
+    height: 5rem;
     background-color: var(--bg-menu);
     gap: 2rem;
     top: 0;
+    z-index: 100;
 }
 @media(min-width:760px){
     .header{
@@ -31,22 +32,26 @@
 .menu{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     gap: 2rem;
     font-weight: bold;
     font-size: var(--text-lg);
-    text-align: center;
+    text-align: right;
+    transition: all ease .5s;
 }
-
+.menu_a{
+    text-align: right;
+}
 .menu_img{
     width: 3rem;
     height: 3rem;
     display: none;
+    cursor: pointer;
 }
 
 
 @media(max-width:991px){
     .menu{
+        display: flex;
         padding: 1.5rem;
         position: absolute;
         top: 70px;
@@ -55,9 +60,8 @@
         z-index: 100;
         background-color:  black;
         text-align: right;
-        display: none;
         flex-direction: column;
-        transition: all ease .5s;
+        
     }
     .menu_img{
         display: block;
@@ -69,9 +73,7 @@
 .deactive{
     display: none;
 }
-.content{
-    width: 90%;
-}
+
 .footer{
     position: absolute;
     bottom: 0;
