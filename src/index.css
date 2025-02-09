@@ -32,7 +32,7 @@ fuente poppins
 :root {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   color: white;
-  background-color: #242424;
+  background-color: black;
   --primary-color:#ff12a5;
   --word-color:white;
   --bg-content: #242424;

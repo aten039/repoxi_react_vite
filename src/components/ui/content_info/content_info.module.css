@@ -1,6 +1,7 @@
 .bg{
     background-color: black;
     padding: 4rem;
+    margin: 0 auto;
 }
 .title{
     font-size: var(--text-6xl);
@@ -11,7 +12,7 @@
 }
 
 .content{
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -28,6 +29,9 @@
     align-items: center;
     gap: 2rem;
 }
+.content_icon p {
+    text-align: center;
+}
 .content div, .content_icon li{
     flex: 1;
 }
@@ -35,6 +39,7 @@
 .icon{
     width: 4rem;
     height: 4rem;
+    margin: 0 auto;
 }
 
 .image{
@@ -43,10 +48,17 @@
     margin: 0 auto;
 }
 
-@media(max-width:767px){
+@media(max-width:991px){
     .content{
         flex-direction: column;
         width: 95%;
+    }
+    .title{
+        font-size: var(--text-4xl);
+    }
+
+    .bg{
+        padding: 2rem;
     }
 }
 .pie_text{
