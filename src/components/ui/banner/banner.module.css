@@ -1,6 +1,6 @@
 .banner{
     position: relative;
-    height: 10rem;
+    height: 30rem;
     width: 100%;
 }
 .banner img{
@@ -20,6 +20,8 @@
     rotate: -15deg;
     line-height: 1.2;
     overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
 }
 .text_banner span {
     color: var(--primary-color);
@@ -29,5 +31,7 @@
     .text_banner{
         font-size: var(--text-4xl);
     }
-    
+    .banner, .banner img{
+        height: 20rem;
+    }
 }
