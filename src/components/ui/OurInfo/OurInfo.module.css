@@ -23,11 +23,13 @@
     height: 500px;
 }
 
-.icon img{
-    width: 90px;
-    height: auto;
+.icon_awesome{
+    width: 100px;
+    height: 100px;
     display: block;
-    margin: 0 auto;
+    margin: 2rem auto;
+
+
 }
 
 .icon_title{
