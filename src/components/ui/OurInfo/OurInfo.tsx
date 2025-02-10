@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import style from "./OurInfo.module.css"
 import {faComments, faCreditCard, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import SocialRed from '../SocialRed/SocialRed'
 
 export default function OurInfo() {
   return (
@@ -24,6 +25,7 @@ export default function OurInfo() {
                 <h3 className={style.icon_title}>Contactanos </h3>
                 <p className={style.icon_description}>¿Necesitas Ayuda? ¡Contáctanos!
                     Si tienes alguna pregunta sobre nuestros métodos de pago o necesitas ayuda para completar tu compra, nuestro equipo de atención al cliente está aquí para ayudarte.</p>
+                <SocialRed/>
             </div>
       </div>
     </div>

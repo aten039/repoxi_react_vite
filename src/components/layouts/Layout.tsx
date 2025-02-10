@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router";
 import style from './layout.module.css'
 import { useState } from "react";
+import SocialRed from "../ui/SocialRed/SocialRed";
 
 export default function Layout() {
 
@@ -48,6 +49,7 @@ export default function Layout() {
             <div>
                 <p>Información de Contacto:</p>
                 <div className="redes-sociales">
+                  <SocialRed/>
                 </div>
             </div>
         </div>
