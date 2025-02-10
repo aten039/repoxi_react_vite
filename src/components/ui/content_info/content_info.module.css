@@ -18,6 +18,7 @@
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    border-bottom: solid gray 1px;
 }
 .content_text{
     font-size: var(--text-2xl);
@@ -60,9 +61,18 @@
     .bg{
         padding: 2rem;
     }
+    .content_text{
+        padding: 2rem 0;
+    }
 }
 .pie_text{
     text-align: right;
     padding: 2rem;
     font-size: var(--text-2xl)
+}
+
+@media(min-width:1600px){
+    .content{
+        width: 60%;
+    }
 }

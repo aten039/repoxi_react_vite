@@ -1,5 +1,6 @@
 import Banner from "../../ui/banner/Banner";
 import Content_info from "../../ui/content_info/Content_info";
+import OurInfo from "../../ui/OurInfo/OurInfo";
 import style from './home.module.css'
 
 export default function Home() {
@@ -13,7 +14,9 @@ export default function Home() {
       <Content_info/>
      </div>
       
-      
+      <div>
+        <OurInfo/>
+      </div>
       
         
     </div>

@@ -90,9 +90,10 @@
 
 .footer{
     margin-top: 3rem;
-    padding: 3rem 3rem 2rem 3rem;
+    padding: 2rem;
     width: 100%;
     background-color: var(--bg-menu);
+    border-top: solid gray 4px;
 }
 .footer_content{
     display: flex;
