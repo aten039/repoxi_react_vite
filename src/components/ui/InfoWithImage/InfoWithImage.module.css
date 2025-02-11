@@ -1,0 +1,53 @@
+.content_info_neon h3{
+    text-align: center;
+    font-size: var(--text-4xl);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.content_info_neon p{
+    line-height: 1.5;
+    font-size: var(--text-xl);
+}
+.content_info_neon{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.materials{
+    background-image: url("/public/img/materiales.jpg");
+}
+.personalized{
+    background-image: url("/public/img/magia.jpg");
+}
+.materials, .personalized{
+    height: 25rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+}
+.sombra{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+.text{
+    position: absolute;
+    padding: 1rem;
+    width: 100%;
+}
+
+@media(min-width:762px){
+    .text{
+        padding: 5rem;
+    }
+}
+@media(min-width:1600px){
+    .text{
+        padding: 5rem 30rem;
+    }
+}

@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import Layout from "./components/layouts/Layout";
 import Home from "./components/main/home/Home";
+import DiscoverNeon from "./components/main/discoverNeon/DiscoverNeon";
 
 
 const router = createBrowserRouter([{
@@ -9,6 +10,9 @@ const router = createBrowserRouter([{
     children:[{
       index:true,
       element:<Home/>
+    },{
+      path:'/discover_neon',
+      element:<DiscoverNeon/>
     }]
 }])
 
