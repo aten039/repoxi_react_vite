@@ -1,3 +1,4 @@
+import { Link } from "react-router"
 import style from "./InfoWithImage.module.css"
 
 export default function InfoWithImage() {
@@ -17,7 +18,11 @@ export default function InfoWithImage() {
                 </div>    
             </div>
             
-            <div>Algo</div>
+            <div className={style.content_text}>
+                <h3>Cotiza tu neon personalizado</h3>
+                <p>No pierdas la oportunidad de darle estilo a tu negocio</p>
+                <Link to={'/create_neon'} className="button">cotizar</Link>
+            </div>
 
             <div className={style.materials}>
                 <div className={style.sombra}></div>
@@ -25,6 +30,12 @@ export default function InfoWithImage() {
                     <h3>La calidad es nuestra prioridad</h3>
                     <p>Utilizamos técnicas de fabricación avanzadas y materiales de primera calidad para garantizar la durabilidad y el rendimiento de nuestros letreros de neón.</p>
                 </div>
+            </div>
+
+            <div className={style.content_text}>
+                <h3>Descubre nuestros neones</h3>
+                <p>La mejor calidad y los mejores diseños, ven y descubrelos</p>
+                <Link to={'/neon'} className="button">descubrir</Link>
             </div>
         </div>
     </div>

@@ -117,3 +117,21 @@ table {
 img{
   width: 100%;
 }
+
+.button{
+    background-color: white;
+    border-radius: 15px;
+    padding: 1rem 4rem;
+    color: black;
+    display: inline-block;
+    text-align: center;
+    width: auto;
+    text-transform: uppercase;
+    margin: 2rem 0;
+    font-weight: bold;
+    transition: all 1s ease;
+    border: solid var(--primary-color) 5px;
+}
+.button:hover{
+  background-color: var(--primary-color);
+}

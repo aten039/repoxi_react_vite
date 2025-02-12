@@ -30,7 +30,7 @@ export default function Layout() {
                   {/* <Link className="menu-publicidad" to="/publicity">Publicidad</Link> */}
                   <Link className={`${style.menu_a} ${style.color_transition}`} to="/discover_neon">Descubre Nuestros Neones</Link>
                   <Link className={`${style.menu_a} ${style.color_transition}`} to="/create_neon">Cotiza Tu Neón</Link>
-                  <Link className={`${style.menu_a} ${style.color_transition}`} to="/about">¿Quiénes somos?</Link>
+                  <Link className={`${style.menu_a} ${style.color_transition}`} to="/neon">Nuestros neones</Link>
               </div>
           </nav>
       </header>
