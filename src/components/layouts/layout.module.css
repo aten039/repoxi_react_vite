@@ -56,7 +56,6 @@
     cursor: pointer;
 }
 
-
 @media(max-width:991px){
     .menu{
         display: flex;

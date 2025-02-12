@@ -1,9 +1,15 @@
-import { Link, Outlet } from "react-router";
+import { Link, Outlet, useLocation } from "react-router";
 import style from './layout.module.css'
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SocialRed from "../ui/SocialRed/SocialRed";
 
 export default function Layout() {
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   const [menuVisible, setMenuVisible] = useState(window.innerWidth>991 ? true : false);
 

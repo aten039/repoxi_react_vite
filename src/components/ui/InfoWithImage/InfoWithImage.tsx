@@ -26,8 +26,6 @@ export default function InfoWithImage() {
                     <p>Utilizamos técnicas de fabricación avanzadas y materiales de primera calidad para garantizar la durabilidad y el rendimiento de nuestros letreros de neón.</p>
                 </div>
             </div>
-                
-            
         </div>
     </div>
   )
