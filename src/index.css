@@ -130,7 +130,7 @@ img{
     margin: 2rem 0;
     font-weight: bold;
     transition: all 1s ease;
-    border: solid var(--primary-color) 5px;
+    border: solid var(--primary-color) 2px;
 }
 .button:hover{
   background-color: var(--primary-color);
