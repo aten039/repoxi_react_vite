@@ -13,6 +13,7 @@
     gap: 2rem;
     top: 0;
     z-index: 100;
+    border-bottom: solid gray 0.2px;
 
 }
 @media(min-width:760px){
@@ -69,7 +70,6 @@
         text-align: right;
         flex-direction: column;
         font-size: var(--text-2xl);
-
         background: rgba(0, 0, 0, 0.90);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
         backdrop-filter: blur(3.7px);
@@ -78,6 +78,11 @@
     }
     .menu_img{
         display: block;
+    }
+}
+@media(min-width:1700px){
+    .menu{
+        font-size: var(--text-2xl);
     }
 }
 .active{

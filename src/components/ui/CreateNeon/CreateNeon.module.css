@@ -80,7 +80,7 @@
 }
 
 .text_neon{
-    font-size: var(--text-6xl);
+    font-size: var(--text-8xl);
     white-space: wrap;
     text-align: center;
     text-overflow:ellipsis;
@@ -151,6 +151,12 @@ input, select{
     }
     .form_piece:nth-child(1){
         border-bottom: solid gray 5px;
+    }
+    
+}
+@media(max-width:1200px){
+    .text_neon{
+        font-size: var(--text-6xl);
     }
 }
 @media(min-width:1400px){
