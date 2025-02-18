@@ -40,3 +40,15 @@
         grid-template-columns: repeat( 5, 1fr);
     }
 }
+
+.content_text{
+    text-align: center;
+    background-color: black;
+    padding: 2rem;
+}
+.content_text h3{
+    text-align: center;
+    font-size: var(--text-4xl);
+    font-weight: bold;
+    margin-bottom: 2rem;
+}

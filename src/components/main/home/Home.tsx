@@ -1,4 +1,5 @@
 import Banner from "../../ui/banner/Banner";
+import BannerNeon from "../../ui/bannerNeon/BannerNeon";
 import Content_info from "../../ui/content_info/Content_info";
 import OurInfo from "../../ui/OurInfo/OurInfo";
 import style from './home.module.css'
@@ -17,7 +18,9 @@ export default function Home() {
       <div>
         <OurInfo/>
       </div>
-      
+      <div>
+        <BannerNeon/>
+      </div>
         
     </div>
   )
