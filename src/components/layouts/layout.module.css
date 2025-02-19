@@ -135,3 +135,6 @@
     font-weight: bold;
     font-size: var(--text-lg);
 }
+.menuActive{
+    color: var(--primary-color);
+}
