@@ -41,7 +41,10 @@ export default function CreateNeon() {
         setNeon(newNeon)
 
     }
-
+    const sendMesagge = ()=>{
+        const url=`https://api.whatsapp.com/send?phone=584120418065&text=Hola%2C%20repoxi.%20Quiero%20una%20cotizaci%C3%B3n!%0A%0ATexto%3A${neon.text}%0AColor%3A${neon.color}%0Afont%3A${neon.font}`
+        window.open(url)
+    }
 
   return (
     <>
@@ -85,7 +88,7 @@ export default function CreateNeon() {
                             </ul>
                         </div>
                         <div>
-                        <input type="submit" className="button" value="Cotiza Tu Neon" id="boton-form"/>
+                        <input type="submit" className="button" value="Cotiza Tu Neon" id="boton-form" onClick={sendMesagge}/>
                         </div>
                         
                     </form>
