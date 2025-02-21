@@ -46,10 +46,10 @@ export default function Layout() {
                 <p className={style.rr}>Derechos Reservados Repoxi &copy;</p> 
                 <div className={style.policy}>
 
-                    <a className={style.color_transition} href="/policy">Política de garantía</a>
-                    <a className={style.color_transition} href="reembolso.html">Política de reembolso</a>
-                    <a className={style.color_transition} href="contacto.html">Contacto</a>
-                    <a className={style.color_transition} href="envios.html">Política de envíos</a>
+                  <NavLink  className={({isActive})=>isActive?`${style.color_transition} ${style.menuActive}`:`${style.color_transition}`} to="/warranty">Política de garantía</NavLink>
+                  <NavLink  className={({isActive})=>isActive?`${style.color_transition} ${style.menuActive}`:`${style.color_transition}`} to="/refund">Política de reembolso</NavLink>
+                  <NavLink  className={({isActive})=>isActive?`${style.color_transition} ${style.menuActive}`:`${style.color_transition}`} to="/contact">Contacto</NavLink>
+                  <NavLink  className={({isActive})=>isActive?`${style.color_transition} ${style.menuActive}`:`${style.color_transition}`} to="/shipping">Política de envíos</NavLink>
 
                 </div>
             </div>

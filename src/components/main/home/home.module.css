@@ -1,3 +1,8 @@
 .grid_template{
     display: grid;
 }
+
+.question{
+    background-color: #E9F6FF;
+    padding: 2rem;
+}

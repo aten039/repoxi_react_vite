@@ -2,6 +2,7 @@ import Banner from "../../ui/banner/Banner";
 import BannerNeon from "../../ui/bannerNeon/BannerNeon";
 import Content_info from "../../ui/content_info/Content_info";
 import OurInfo from "../../ui/OurInfo/OurInfo";
+import PanelQuestion from "../../ui/panelQuestion/PanelQuestion";
 import style from './home.module.css'
 
 export default function Home() {
@@ -21,7 +22,10 @@ export default function Home() {
       <div>
         <BannerNeon/>
       </div>
-        
+      
+      <div className={style.question}>
+        <PanelQuestion/>
+      </div>
     </div>
   )
 }

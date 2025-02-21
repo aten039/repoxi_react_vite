@@ -4,6 +4,10 @@ import Home from "./components/main/home/Home";
 import DiscoverNeon from "./components/main/discoverNeon/DiscoverNeon";
 import CreateNeonContent from "./components/main/CreateNeonContent/CreateNeonContent";
 import ContentListNeon from "./components/main/contentListNeon/ContentListNeon";
+import RefundPolicy from "./components/policies/RefundPolicy";
+import WarrantyPolicy from "./components/policies/WarrantyPolicy";
+import ShippingPolicy from "./components/policies/ShippingPolicy";
+import ContactPolicy from "./components/policies/ContactPolicy";
 
 
 const router = createBrowserRouter([{
@@ -21,6 +25,18 @@ const router = createBrowserRouter([{
     },{
       path:'/neon',
       element:<ContentListNeon/>
+    },{
+      path:'/refund',
+      element:<RefundPolicy/>
+    },{
+      path:'/warranty',
+      element:<WarrantyPolicy/>
+    },{
+      path:'/contact',
+      element:<ContactPolicy/>
+    },{
+      path:'/shipping',
+      element:<ShippingPolicy/>
     },
 ]}])
 
