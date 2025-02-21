@@ -3,6 +3,7 @@ import style from './layout.module.css'
 import { useEffect, useState } from "react";
 import SocialRed from "../ui/SocialRed/SocialRed";
 import { NavLink } from "react-router";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Layout() {
 
@@ -21,6 +22,7 @@ export default function Layout() {
 
   return (
     <>
+      <Analytics/>
       <div className={style.space} ></div>
       <header className={style.header}>
           <a href="./" className={`${style.logo} ${style.color_transition}`}>repoxi</a>
