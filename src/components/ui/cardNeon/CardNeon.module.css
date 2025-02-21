@@ -7,7 +7,6 @@
     margin-bottom: 1rem;
 }
 .card{
-    transition: all ease 0.5s;
     overflow: hidden;
     border-radius: 5% 5% 5% 5%;
     -webkit-box-shadow: 6px 6px 26px -8px rgba(0,0,0,0.75);

@@ -30,10 +30,11 @@ export default function ContentListNeon() {
       price:"70"
     },
     {
-      title:"graduacion",
-      img:"1000442188.jpg",
-      price:"70"
+      title:"si te gusta, usalo",
+      img:"si_gusta.jpg",
+      price:"55"
     },
+  
     {
       title:"eres magnifica",
       img:"1000442206.jpg",
@@ -72,12 +73,7 @@ export default function ContentListNeon() {
     {
       title:"Sonrie a la vida",
       img:"sonrie.jpg",
-      price:"50"
-    },
-    {
-      title:"si te gusta, usalo",
-      img:"si_gusta.jpg",
-      price:"45"
+      price:"65"
     },
     {
       title:"Logo mdf vinil 60cm",
@@ -93,12 +89,19 @@ export default function ContentListNeon() {
       title:"Haz magia",
       img:"magia.jpg",
       price:"45"
-    }
+    },
+    {
+      title:"perrito caliente",
+      img:"1000443024.jpg",
+      price:"55"
+    },
   ] 
 
-  const mitad = Math.ceil(neones.length / 2);
-  const firstMitad = neones.slice(0, mitad); 
-  const secondMitad = neones.slice(mitad);
+  const randomNeon = neones.sort(()=> Math.random() - 0.5)
+
+  const mitad = Math.ceil(randomNeon.length / 2);
+  const firstMitad = randomNeon.slice(0, mitad); 
+  const secondMitad = randomNeon.slice(mitad);
    
   return (
     <>
