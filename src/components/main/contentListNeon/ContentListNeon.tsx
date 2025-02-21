@@ -15,14 +15,49 @@ export default function ContentListNeon() {
 
   const neones: Neon[] = [
     {
-      title:"Alzada fucsia",
-      img:"alzada.jpg",
-      price:""
-    },
-    {
       title:"happy birthday blanco cálido",
       img:"happy1.jpg",
       price:"55"
+    },
+    {
+      title:"portate mal",
+      img:"1000442180.jpg",
+      price:"135"
+    },
+    {
+      title:"amor, alegria y una cerveza",
+      img:"1000442187.jpg",
+      price:"70"
+    },
+    {
+      title:"graduacion",
+      img:"1000442188.jpg",
+      price:"70"
+    },
+    {
+      title:"eres magnifica",
+      img:"1000442206.jpg",
+      price:"65"
+    },
+    {
+      title:"eres magnifica",
+      img:"1000442207.jpg",
+      price:"65"
+    },
+    {
+      title:"a al tiempo, buen outfit",
+      img:"1000442189.jpg",
+      price:"70"
+    },
+    {
+      title:"ama, come y bebe",
+      img:"1000442194.jpg",
+      price:"100"
+    },
+    {
+      title:"barquilla",
+      img:"1000442203.jpg",
+      price:"100"
     },
     {
       title:"happy birthday blanco frio",
@@ -57,18 +92,8 @@ export default function ContentListNeon() {
     {
       title:"Haz magia",
       img:"magia.jpg",
-      price:"40"
-    },
-    {
-      title:"vida dulce, dulce vida",
-      img:"pinerolo.jpg",
       price:"45"
-    },
-    {
-      title:"Street Shop",
-      img:"street2.jpg",
-      price:"45"
-    },
+    }
   ] 
 
   const mitad = Math.ceil(neones.length / 2);
@@ -105,10 +130,7 @@ export default function ContentListNeon() {
                 <p>La mejor calidad y los mejores diseños, ven y descubrelos</p>
                 <Link to={'/discover_neon'} className="button">descubrir</Link>
           </div>
-          
         </div>
-       
-         
     </>
   )
 }

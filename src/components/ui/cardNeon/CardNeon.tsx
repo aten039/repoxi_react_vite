@@ -16,9 +16,7 @@ export default function CardNeon({title, img, price}: Props) {
             <h2 className={style.tittle}>{title}</h2>
             <p>A partir de: <span>{price}$</span></p>
           </div>
-          
         </div>
-        
       </div>
     </>
   )
