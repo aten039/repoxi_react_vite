@@ -60,7 +60,7 @@ export default function Layout() {
                 </div>
             </div>
         </div>
-        <div  id="dragonBytes" className={style.dragon}>Create by: <a className="text-orange-400 font-bold" href="https://www.instagram.com/dragon_bytes_web/">Dragon Bytes</a></div>
+        <div  id="dragonBytes" className={style.dragon}>Create by: <a className="text-orange-400 font-bold" href="https://www.instagram.com/dragon_bytes_web/" target="_blank" rel="noopener noreferrer">Dragon Bytes</a></div>
       </footer>
     </>
     
