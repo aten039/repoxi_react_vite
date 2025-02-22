@@ -28,7 +28,6 @@
     border-top: solid 1px rgba(0,0,0,0.75);
 }
 .disclosure_panel{
-   
     font-size: var(--text-xl);
 }
 
@@ -43,7 +42,7 @@
 }
 @media(max-width:991px){
     .tittle{
-        font-size: var(--text-2xl);
+        font-size: var(--text-4xl);
     }
     .content{
         width: 95%;

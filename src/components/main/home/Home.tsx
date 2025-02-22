@@ -1,5 +1,6 @@
 import Banner from "../../ui/banner/Banner";
 import BannerNeon from "../../ui/bannerNeon/BannerNeon";
+import ColorBanner from "../../ui/colorBanner/ColorBanner";
 import Content_info from "../../ui/content_info/Content_info";
 import OurInfo from "../../ui/OurInfo/OurInfo";
 import PanelQuestion from "../../ui/panelQuestion/PanelQuestion";
@@ -25,6 +26,10 @@ export default function Home() {
       
       <div className={style.question}>
         <PanelQuestion/>
+      </div>
+      
+      <div>
+        <ColorBanner/>
       </div>
     </div>
   )
