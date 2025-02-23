@@ -7,13 +7,40 @@ import { Analytics } from "@vercel/analytics/react";
 
 export default function Layout() {
 
+  const [menuVisible, setMenuVisible] = useState(window.innerWidth>991 ? true : false);
+  const [menu, setmenu] = useState(true);
   const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+  
+  useEffect(()=>{
+    let prevScrollPos = window.pageYOffset
+    const handleScroll = ()=>{
 
-  const [menuVisible, setMenuVisible] = useState(window.innerWidth>991 ? true : false);
+      let actualScroll = window.pageYOffset
+      let isScroll = prevScrollPos >= actualScroll
+      setmenu(isScroll)
+      
+      prevScrollPos = actualScroll
+    }
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  console.log(document.querySelector('body'))
+  useEffect(()=>{
+    if(menuVisible){
+      document.querySelector('body')?.classList.add('active_scroll')
+    }else{
+      document.querySelector('body')?.classList.remove('active_scroll')
+    }
+  }, [menuVisible])
+
+  
+  
 
   const handleClick = ()=>{
     const value = menuVisible?false:true
@@ -24,21 +51,24 @@ export default function Layout() {
     <>
       <Analytics/>
       <div className={style.space} ></div>
-      <header className={style.header}>
-          <a href="./" className={`${style.logo} ${style.color_transition}`}>repoxi</a>
-          <nav >
-              <img onClick={handleClick} className={`${style.menu_img}`} src="/img/menu.png" alt="menu"/>
-              <nav className={menuVisible?`${style.active} ${style.menu}`:`${style.deactive} ${style.menu}`}>
-                  <NavLink  className={({isActive})=>isActive?`${style.menu_a} ${style.color_transition} ${style.menuActive}`:`${style.menu_a} ${style.color_transition}`} to="./">Inicio</NavLink>
-                  {/* <Link className="menu-publicidad" to="/publicity">Publicidad</Link> */}
-                  <NavLink  className={({isActive})=>isActive?`${style.menu_a} ${style.color_transition} ${style.menuActive}`:`${style.menu_a} ${style.color_transition}`} to="/discover_neon">Descubre Nuestros Neones</NavLink>
-                  <NavLink className={({isActive})=>isActive?`${style.menu_a} ${style.color_transition} ${style.menuActive}`:`${style.menu_a} ${style.color_transition}`} to="/create_neon">Cotiza Tu Neón</NavLink>
-                  <NavLink  className={({isActive})=>isActive?`${style.menu_a} ${style.color_transition} ${style.menuActive}`:`${style.menu_a} ${style.color_transition}`} to="/neon">Nuestros neones</NavLink>
-              </nav>
-          </nav>
+      
+      <header className={menu?`${style.header} ${style.visible_menu}`:`${style.header} ${style.invisible_menu}`}>
+        <a href="./" className={`${style.logo} ${style.color_transition}`}>repoxi</a>
+        <nav >
+            <img onClick={handleClick} className={`${style.menu_img}`} src="/img/menu.png" alt="menu"/>
+            <nav className={menuVisible?`${style.active} ${style.menu}`:`${style.deactive} ${style.menu}`}>
+                <NavLink  className={({isActive})=>isActive?`${style.menu_a} ${style.color_transition} ${style.menuActive}`:`${style.menu_a} ${style.color_transition}`} to="./">Inicio</NavLink>
+                {/* <Link className="menu-publicidad" to="/publicity">Publicidad</Link> */}
+                <NavLink  className={({isActive})=>isActive?`${style.menu_a} ${style.color_transition} ${style.menuActive}`:`${style.menu_a} ${style.color_transition}`} to="/discover_neon">Descubre Nuestros Neones</NavLink>
+                <NavLink className={({isActive})=>isActive?`${style.menu_a} ${style.color_transition} ${style.menuActive}`:`${style.menu_a} ${style.color_transition}`} to="/create_neon">Cotiza Tu Neón</NavLink>
+                <NavLink  className={({isActive})=>isActive?`${style.menu_a} ${style.color_transition} ${style.menuActive}`:`${style.menu_a} ${style.color_transition}`} to="/neon">Nuestros neones</NavLink>
+            </nav>
+        </nav>
       </header>
+      
+      
 
-      <main >
+      <main>
         <Outlet/>
       </main>
 

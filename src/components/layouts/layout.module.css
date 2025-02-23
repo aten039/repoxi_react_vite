@@ -14,8 +14,15 @@
     top: 0;
     z-index: 100;
     border-bottom: solid gray 0.2px;
-
+    transition: all ease 0.5s;
 }
+.visible_menu{
+    top: 0;
+}
+.invisible_menu{
+    top: -100px;
+}
+
 @media(min-width:760px){
     .header{
         padding: 2rem;
