@@ -1,48 +1,58 @@
 @font-face {
-    font-family: 'Genit';
-    src: url(/font/neon/genit_demo.otf);
+    font-family: 'AmsterdamOneSlant';
+    src: url(/font/neon/AmsterdamOneSlant.ttf);
     font-weight: normal;
     font-style: normal;
 }
-.genit{
-    font-family: Genit, Arial, Helvetica, sans-serif;
+.AmsterdamOneSlant{
+    font-family: AmsterdamOneSlant, Arial, Helvetica, sans-serif;
 }
 @font-face {
-    font-family: 'MgScript';
-    src: url(/font/neon/MG_script.otf);
+    font-family: 'Ananda';
+    src: url(/font/neon/Ananda.ttf);
     font-weight: normal;
     font-style: normal;
 }
-.mgScript{
-    font-family: MgScript, Arial, Helvetica, sans-serif;
+.Ananda{
+    font-family: Ananda, Arial, Helvetica, sans-serif;
 }
 @font-face {
-    font-family: 'MgSerif';
-    src: url(/font/neon/MG_serif.otf);
+    font-family: 'Anatomia';
+    src: url(/font/neon/Anatomia.ttf);
     font-weight: normal;
     font-style: normal;
 }
-.mgSerif{
-    font-family: MgSerif, Arial, Helvetica, sans-serif;
+.Anatomia{
+    font-family: Anatomia, Arial, Helvetica, sans-serif;
 }
 @font-face {
-    font-family: 'Monsieur';
-    src: url(/font/neon/MonsieurLaDoulaise.ttf);
+    font-family: 'Poppins-Regular';
+    src: url(/font/neon/Poppins-Regular.ttf);
     font-weight: normal;
     font-style: normal;
 }
-.monsieur{
-    font-family: Monsieur, Arial, Helvetica, sans-serif;
+.Poppins_Regular{
+    font-family: Poppins-Regular, Arial, Helvetica, sans-serif;
 }
 
 @font-face {
-    font-family: 'Ruthligos';
-    src: url(/font/neon/Ruthligos.ttf);
+    font-family: 'ProcreateSignature';
+    src: url(/font/neon/ProcreateSignature.otf);
     font-weight: normal;
     font-style: normal;
 }
-.ruthligos{
-    font-family: Ruthligos, Arial, Helvetica, sans-serif;
+.ProcreateSignature{
+    font-family: ProcreateSignature, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'Sallome';
+    src: url(/font/neon/Sallome.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+.Sallome{
+    font-family: Sallome, Arial, Helvetica, sans-serif;
 }
 
 
@@ -199,4 +209,23 @@ h3[data-color="blanco"]{
 }
 .blanco{
     background-color: #Ffffff;
+}
+
+.verde{
+    background-color: #65ce00;
+}
+h3[data-color="verde"]{
+    text-shadow: 0  0 5px #65ce00,  0  0 15px #65ce00,  0  0 30px #65ce00;
+}
+.rojo{
+    background-color: #f20000 ;
+}
+h3[data-color="rojo"]{
+    text-shadow: 0  0 5px #f20000,  0  0 15px #f20000,  0  0 30px #f20000;
+}
+.naranja{
+    background-color: #f98e00 ;
+}
+h3[data-color="naranja"]{
+    text-shadow: 0  0 5px #f98e00,  0  0 15px #f98e00,  0  0 30px #f98e00;
 }

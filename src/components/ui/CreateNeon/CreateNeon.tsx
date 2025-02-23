@@ -68,11 +68,12 @@ export default function CreateNeon() {
                         <div>
                             <label className={style.text} htmlFor="fuentes">Elije la fuente</label>
                             <select className={style.fuentes} name="fuentes" id="fuentes" onChange={handleChangeSelect}>
-                                <option className={style.mgSerif} value="mgSerif">Mg Serif</option>
-                                <option className={style.genit} value="genit">Genit demo</option>
-                                <option className={style.mgScript} value="mgScript">Mg Script</option>
-                                <option className={style.monsieur} value="monsieur">Monsieur La Doulaise</option>
-                                <option className={style.ruthligos} value="ruthligos">Ruthligos</option>
+                                <option className={style.Anatomia} value="Anatomia">Anatomia</option>
+                                <option className={style.AmsterdamOneSlant} value="AmsterdamOneSlant">Amsterdam One Slant</option>
+                                <option className={style.Ananda} value="Ananda">Ananda</option>
+                                <option className={style.Poppins_Regular} value="Poppins-Regular">PoppinsRegular</option>
+                                <option className={style.ProcreateSignature} value="ProcreateSignature">Procreate Signature</option>
+                                <option className={style.Sallome} value="Sallome">Sallome</option>
 
                             </select>
                         </div>
@@ -85,6 +86,9 @@ export default function CreateNeon() {
                                 <div className={ `${style.circle} ${style.azul}`} id="azul" onClick={handleChangeClick}></div>
                                 <div className={ `${style.circle} ${style.cyan}`} id="cyan" onClick={handleChangeClick}></div>
                                 <div className={ `${style.circle} ${style.blanco}`} id="blanco" onClick={handleChangeClick}></div>
+                                <div className={ `${style.circle} ${style.verde}`} id="verde" onClick={handleChangeClick}></div>
+                                <div className={ `${style.circle} ${style.rojo}`} id="rojo" onClick={handleChangeClick}></div>
+                                <div className={ `${style.circle} ${style.naranja}`} id="naranja" onClick={handleChangeClick}></div>
                             </ul>
                         </div>
                         <div>
