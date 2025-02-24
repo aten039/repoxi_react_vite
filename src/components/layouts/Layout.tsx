@@ -13,6 +13,7 @@ export default function Layout() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
+    setMenuVisible(false)
   }, [pathname]);
   
   useEffect(()=>{

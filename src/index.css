@@ -138,5 +138,15 @@ img{
 @media(max-width:991px){
   .active_scroll{
     overflow: hidden;
+    position: relative;
+  }
+  .active_scroll::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
   }
 }
