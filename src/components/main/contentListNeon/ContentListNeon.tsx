@@ -27,7 +27,7 @@ export default function ContentListNeon() {
     {
       title:"amor, alegria y una cerveza",
       img:"1000442187.jpg",
-      price:"70"
+      price:"100"
     },
     {
       title:"si te gusta, usalo",
@@ -46,7 +46,7 @@ export default function ContentListNeon() {
       price:"65"
     },
     {
-      title:"a al tiempo, buen outfit",
+      title:"a mal tiempo, buen outfit",
       img:"1000442189.jpg",
       price:"70"
     },
@@ -68,7 +68,7 @@ export default function ContentListNeon() {
     {
       title:"Nails fucsia",
       img:"nails.jpg",
-      price:"50"
+      price:"35"
     },
     {
       title:"Sonrie a la vida",
